@@ -176,14 +176,7 @@
                     fallbackScript('return ["ERROR"]')
                 }
             }
-            activeChoiceParam('TestRunID') {
-                filterable()
-                choiceType('SINGLE_SELECT')
-                groovyScript {
-                    script('["49646"]')
-                    fallbackScript('return ["ERROR"]')
-                }
-            }
+            stringParam('TestRunID', '')
             booleanParam('systemShutDown', false)
             stringParam('projectBasedirectory', '${WORKSPACE}')
         }

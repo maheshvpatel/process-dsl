@@ -242,14 +242,7 @@
                     fallbackScript('return ["ERROR"]')
                 }
             }
-            activeChoiceParam('TestRunId') {
-                filterable()
-                choiceType('SINGLE_SELECT')
-                groovyScript {
-                    script('["49646"]')
-                    fallbackScript('return ["ERROR"]')
-                }
-            }
+            stringParam('TestRunID', '')
             activeChoiceReactiveParam('primaryDeviceSerial') {
                 choiceType('SINGLE_SELECT')
                 groovyScript {
